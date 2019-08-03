@@ -1,0 +1,122 @@
+/* banner1部分 */
+
+.vh_login{
+	width: 1263px;
+	height: 526px;
+	margin: 101px auto 0;
+	position: relative;
+}
+.vh_login img{
+	width: 100%;
+}
+.vh_login .logBox {
+	width: 340px;
+	height: 400px;
+	background-color: #fff;
+	position: absolute;
+	right: 90px;
+	top: 50%;
+	margin-top: -200px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+.login_method{
+	height: 43px;
+	box-sizing: border-box;
+	padding: 10px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+	margin-bottom: 20px;
+}
+.login_method p{
+	float: left;
+	line-height: 23px;
+	width: 50%;
+	cursor: pointer;
+}
+
+.login_method #currenMethod{
+	color: #333;
+	border-right: 1px solid #333;
+	box-sizing: border-box;
+}
+
+/* 验证码方式登录表单 */
+.logBox .quick_login{
+	width: 280px;
+	display: block;
+	position: absolute;
+}
+.logBox .login_m1{
+	padding: 10px 0px 10px 0px;
+	box-sizing: border-box;
+	overflow: hidden;    /* 清除浮动 */
+}
+.login_m1 .txt{
+	height: 35px;
+    width: 100%;
+    line-height: 35px;
+    padding-left: 10px;
+	box-sizing: border-box;
+
+}
+/* 验证码 */
+.login_m1 #code{
+	width: 56%;
+	float: left;
+}
+.login_m1 #getCode{
+	width: 40%;
+	height: 35px;
+    line-height: 35px;
+    text-align: center;
+    float: right;
+    border: 1px solid #333;
+    cursor: pointer;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.logBox .login_submit1 , .logBox .login_submit2{
+	width: 100%;
+	height: 40px;
+    line-height: 40px;
+	text-align: center;
+    color: #cdbc7a;
+    background-color: #000e22;
+    margin: 20px 0px;
+    cursor: pointer;
+	font-size: 16px;
+}
+.logBox .go_reg{
+	color: #333;
+    text-align: center;
+	font-size: 16px;
+
+}
+.go_reg:hover{
+	text-decoration: underline;
+}
+/* 账号密码方式登录 */
+.logBox .account_login{
+	width: 280px;
+	position: absolute;
+	display: none;
+}
+.login_m1 .passSelect{
+	vertical-align: bottom;
+}
+.login_m1 .rememberPass{
+	vertical-align: bottom;
+}
+.rememberPass , .forgetPass{
+	font-size: 14px;
+}
+.login_m1 .forgetPass{
+	float: right;
+}
+.logBox .login_submit2{
+	margin-top: 0;
+}

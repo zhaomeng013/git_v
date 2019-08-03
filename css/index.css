@@ -1,0 +1,283 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,input,td,select,textarea{
+	margin:0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color:black;
+}
+li {
+	list-style: none;
+}
+body{
+	background-color: #fff;
+	color: #222;
+	width: 100%;
+}
+/* vh_body */
+.vh_body{
+	margin-top: 101px;
+	width: 100%;
+}
+/* banner1部分 */
+/* 面向对象轮播图 */
+#banner1{
+	margin-top: 101px;
+	width: 1263px;
+	height: 464px;
+	margin: 0 auto;
+}
+/* 新品推荐 */
+.vh_tuijian1 {
+	width: 1243px;
+	margin: 60px auto;
+}
+.vh_tuijian1 .tuijian_titile{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #444;
+}
+.tuijian_line{
+	width: 70px;
+    height: 3px;
+    background-color: #000e22;
+    margin: auto;
+}
+.tuijian_list{
+	margin-top: 70px;
+}
+.tuijian_list ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+.tuijian_list .list_1{
+	float: left;
+	width: 25%;
+	padding: 20px;
+	box-sizing: border-box;
+} 
+
+
+.tuijian_list .list_1 span{
+	display: block;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	font-weight: 100;
+}
+.tuijian_list .list_1 span:first-of-type{
+	line-height: 25px;
+	height: 25px;
+}
+
+.tuijian_list .list_1 img{
+	width: 100%;
+}
+/* .banner2   */
+.banner2{
+	width: 1263px;
+	margin: 0 auto;
+}
+.banner2 img{
+	width: 100%;
+}
+/* 产品列表 */
+/* 左边部分 */
+.vh_product_list{
+	width: 1200px;
+	margin: 145px auto;
+	height: 384px;
+}
+.list_left{
+	width: 600px;
+	height: 384px;
+	float: left;
+}
+.list_left .list_woman , .list_left .list_man{
+	float: left;
+	width: 278px;
+	height: 388px;
+	margin-right: 20px;
+	position: relative;   
+}
+.list_left a{
+	position: absolute;
+	top: 280px;
+	width: 160px;
+	left: 50%;
+	margin-left: -80px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #fff;
+	color: #333;
+	font-size: 16px;
+	transition: ;
+}
+.list_left a:hover{
+	/* background-color:#f2be35; */
+	color: #fff;
+	background: linear-gradient(to left,#f2be35, #f2be35, #f2be35);
+	transition: all .7s;
+}
+.list_right .list_fenlei{
+	float: left;
+    width: 184px;
+    height: 184px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.list_right .list_fenlei:nth-child(3n){
+	margin-right: 0px;
+}
+.list_right .list_fenlei_bottom{
+	margin-top: 20px;
+}
+/* 视频部分 */
+#vh_video{
+	margin-top: 100px;
+	position: relative;
+}
+video{
+	display: none;
+	position: absolute;
+	left: 100px;
+	bottom: 0;
+}
+#close{
+	width: 50px;
+	height: 50px;
+	color: gray;
+	position: absolute;
+	left: 1060px;
+	top:-80px;
+	font-size: 46px;
+	z-index: 10;
+	cursor: pointer;
+	display: none;
+}
+#vh_video img{
+	width: 1263px;
+	cursor: pointer;
+}
+
+/* 照片墙 */
+.vh_body .picture_wall{
+	width: 1263px;
+	height: 505px;
+	display: flex;
+	margin: 90px auto 0;
+}
+.picture_wall_l,.picture_wall_r{
+	
+	width: 379px;
+}
+.picture_wall_m {
+	flex: 1;
+}
+.picture_wall_m .picture_wall_m_tb , .picture_wall_m .picture_wall_m_tb {
+	height: 25%;
+	
+}
+.picture_wall_m .picture_wall_m_middle{
+	height: 50%;
+}
+.picture_wall_m_tb div{
+	float: left;
+	width: 25%;
+	height: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
+	
+}
+.picture_wall_m_middle{
+	width: 100%;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+.picture_wall_l .wall_l_top{
+	width: 100%;
+	
+}
+.picture_wall_row2{
+	width: 33.33%;
+	float: left;
+	padding: 0 5px;
+	box-sizing: border-box;
+	
+}
+.picture_wall_row1{
+	width: 66.66%;
+	float: right;
+	box-sizing: border-box;
+	padding: 0 5px;
+
+	
+}
+
+.picture_wall a{
+	display: block;
+	position: relative;
+}
+.picture_wall img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+	
+}
+
+.cover1:after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	z-index: 3;
+	transition:opacity .3s;
+
+
+}
+.cover1:before{
+	content: "查看详情";
+	width: 80px;
+	height: 20px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -10px;
+	display: none;
+	z-index:4 ;
+	
+}
+.cover1:hover:after{
+	opacity: .8;
+
+}
+.cover1:hover:before{
+	display: block;
+}
+/* 修改照片浮动方向 */
+.wall_l_bottom .picture_wall_row1, .wall_r_top .picture_wall_row1{
+	float: left;
+}
+.wall_l_bottom .picture_wall_row2, .wall_r_top .picture_wall_row2{
+	float: right;
+}
+
+ 

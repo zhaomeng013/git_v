@@ -1,0 +1,82 @@
+
+
+/* banner1部分 */
+
+#banner1{
+	width: 1263px;
+	height: 427px;
+	margin: 101px auto 0;
+	
+	
+}
+#banner1 img{
+	width: 100%;
+	/* height: 100%; */
+}
+/* vh_body */
+.vh_body{
+	width: 100%;
+	
+}
+/* float系列 */
+.vh_product {
+	width: 1243px;
+	margin: 60px auto;
+	/* padding-bottom: 20px; */
+}
+
+.vh_product .product_titile{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #444;
+	letter-spacing: 5px;
+}
+.vh_body .vh_product:last-child{
+	margin: 0;
+	padding: 0;
+}
+.product_titile1{
+	font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    line-height: 25px;
+    margin-top: 20px;
+	 text-align: center;
+}
+
+.product_list ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.product_list .list_1{
+	float: left;
+	width: 25%;
+	padding: 30px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+} 
+
+
+.product_list .list_1 span{
+	display: block;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	font-weight: 100;
+}
+.product_list .list_1 span:first-of-type{
+	line-height: 25px;
+	height: 25px;
+}
+
+.product_list .list_1 img{
+	width: 100%;
+}

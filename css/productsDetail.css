@@ -1,0 +1,326 @@
+
+/* vh_body */
+.vh_body{
+	margin-top: 101px;
+	width: 100%;
+	
+}
+
+.mirrorBox{
+	width: 1263px;
+	height: 868px;
+	margin: 0 auto;
+	background-image: url(../img/mirrorbgc.jpg);
+	background-position: top center;
+	background-size: cover;
+	padding: 180px 20px 60px;
+	box-sizing: border-box;
+	
+}
+.mirrorBox .mirror{
+	width: 1000px;
+	height: 628px;
+	margin: 0 auto;
+}
+
+.mirrorBox .mirror .mirror_left{
+	width: 500px;
+	height: 628px;
+	float: left;
+	background-color: #fff;
+}
+.mirror_pic{
+	height: 510px;
+	position: relative;
+}
+/* jquery 动态创建div的样式 */
+.mirror_pic .mirror_show{             
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	left: 500px;
+	top: 0;
+	z-index: 10;
+}
+.mirror_show .mirror_show_img{
+	width: 100%;
+	height: 100%;
+	background: url(../img/m1.jpg)  ;
+
+}
+.mirror_pic img{
+	width: 100%;
+	display: block;
+}
+
+/* 底部图片列表 */
+.mirror_pic_box{
+	width: 100%;
+	padding: 10px;
+	height: 117px;
+	box-sizing: border-box;
+	/* background-color: pink; */
+	position: relative;
+	overflow: hidden;
+	
+}
+.arrow_r , .arrow_l{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 5px #f1f1f1;
+	z-index: 2;
+	cursor: pointer;
+}
+.mirror_pic_box .arrow_l{
+	float: left;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	left: 10px;
+	
+}
+
+.mirror_pic_box .arrow_r{
+	float: right;
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	right: 10px;
+}
+.mirror_pic_box span{
+	line-height: 30px;
+	position: absolute;
+	left: 8px;
+	font-size: 20px;
+	color: #4e4e4e;
+	font-weight: 100;
+}
+.mirror_pic_box .pro_list{
+	width: 380px;
+	padding: 0 50px;
+	display: flex;
+	overflow: hidden;
+}
+.pro_list div{
+	float: left;
+	padding: 0 20px;
+	margin-right: 10px;
+}
+.mirror_pic_box img{
+	width: 87px;
+	height: 87px;
+}
+/* 左边产品详情 */
+.mirrorBox .mirror .mirror_right{
+	width: 50%;
+	height: 100%;
+	float: right;
+	background-color: #f3f3f3;
+	padding: 25px 50px;
+	box-sizing: border-box;
+}
+.mirror_right .pro_tit{
+	font-size: 24px;
+    padding: 10px 20px 0;
+	margin: 18px auto 40px;
+	text-align: center;
+	letter-spacing: 10px;
+	
+}
+.mirror_right .pro_color{
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 2px;
+	
+
+}
+.pro_color .pro_color_padding{
+	padding-top: 20px;
+}
+.pro_color .icon_contain{
+	margin: 12px auto 40px;
+	
+}
+.pro_color .icon{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 1px solid black;
+	margin: 0 auto;
+	background: url(../img/m1.jpg) no-repeat center;
+	background-size: contain;
+	cursor: pointer;
+	
+}
+.pro_mount{
+    height: 82px;
+    color: black;
+	/* padding-top: 40px; */
+    font-size: 12px;   
+    text-align: center;
+}
+.pro_mount .mount{
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	margin-left: 120px;
+	margin-right: 30px;
+	
+}
+.pro_mount .mount_box{
+	float: left;
+}
+.mount_box input{
+	float: left;
+}
+.mount_box .addmore{
+	float: left;
+	margin-right: 5px;
+	
+}
+.pro_mount input{
+	width: 40px;
+	height: 32px;
+	padding: 5px;
+	box-sizing: border-box;
+	border: 1px solid #15171d;
+	background: #fff;
+	color: #00081c;
+	margin-right: 5px;
+	
+}
+.addmore .add,.addmore .dec{
+	width: 22px;
+	height: 14px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	margin-bottom: 4px;
+	position: relative;
+	cursor: pointer;
+}
+.addmore .add span{
+	position: absolute;
+	left: 3px;
+    top: -5px;
+	
+}
+.addmore .dec span{
+	position: absolute;
+	left: 3px;
+	top: 0px;
+}
+.mount_box i{
+	font-style: normal;
+	vertical-align: middle;
+	line-height: 36px;
+}
+.pro_mount .like{
+	float: right;
+	width: 32px;
+	height: 32px;
+	margin-right: 110px;
+	cursor: pointer;
+}
+/* 选购 */
+.pro_buy{
+	height: 50px;
+	width: 374px;
+	margin: 20px auto;
+	box-shadow: 0px 0px 3px 1px #cdbc7a;
+	background-color: #000e22;
+	line-height: 50px;
+}
+
+
+.pro_buy .price , .pro_buy .buy{
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.pro_buy .price::after{
+	content: "";
+	display: block;
+	width: .5px;
+	height: 16px;
+	background-color: #66654e;
+	position: absolute;
+	left: 188px;
+	top: 18px;
+}
+
+.pro_buy span{
+	color: #cdbc7a;
+	font-size: 12px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+
+/* 视频部分 */
+.vh_video_img{
+	width: 1263px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.vh_video_img img{
+	width: 100%;
+}
+
+/* 新品推荐 */
+.vh_tuijian1 {
+	width: 1243px;
+	margin: 60px auto;
+}
+.vh_tuijian1 .tuijian_titile{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #444;
+}
+.tuijian_line{
+	width: 70px;
+    height: 3px;
+    background-color: #000e22;
+    margin: auto;
+}
+.tuijian_list{
+	margin-top: 70px;
+}
+.tuijian_list ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+.tuijian_list .list_1{
+	float: left;
+	width: 25%;
+	padding: 20px;
+	box-sizing: border-box;
+} 
+
+
+.tuijian_list .list_1 span{
+	display: block;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	font-weight: 100;
+}
+.tuijian_list .list_1 span:first-of-type{
+	line-height: 25px;
+	height: 25px;
+}
+
+.tuijian_list .list_1 img{
+	width: 100%;
+}
