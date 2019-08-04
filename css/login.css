@@ -3,7 +3,7 @@
 .vh_login{
 	width: 1263px;
 	height: 526px;
-	margin: 101px auto 0;
+	margin: 0 auto;
 	position: relative;
 }
 .vh_login img{
@@ -20,6 +20,7 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
 	padding: 20px 30px;
 	box-sizing: border-box;
+	
 }
 .login_method{
 	height: 43px;

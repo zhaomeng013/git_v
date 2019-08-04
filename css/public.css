@@ -15,236 +15,213 @@ body{
 	width: 100%;
 	/* overflow-x: hidden; */
 }
-/* 头部 */
-/* 默认有padding样式 */
-.vhheader{
-	position: fixed;
-	width: 100%;
-	z-index: 10;
-	top: 0px;
-	border-bottom: 1px solid #d9d9d9;
-	padding: 20px;
-	background-color: #fff;
-	box-sizing: border-box;
 
-	
-}
-/* 滑动无padding样式 */
-.vhheader_padding{
-	/* position: fixed; */
+/* 头部 */
+.vh_header{
 	width: 100%;
-	z-index: 10;
-	top: 0px;
-	border-bottom: 1px solid #d9d9d9;
 	background-color: #fff;
 	box-sizing: border-box;
-}
- 
-.vh_header{
-	z-index: 10;
-	box-sizing: border-box;
+	position: relative;
+	margin: 0 auto;
+	z-index: 1000;            
+} 
+
+.vh_header_top{
+	height: 100px;
 	width: 1263px;
 	margin: 0 auto;
-}
-
-.vh_header_nav li{
-	float: left;
-	line-height: 60px;
-	padding: 0 10px;
-	font-size: 14px;
-	color: black;
-}
-.vh_header_nav li a{
-	color: #333;
-	
-}
-
-.vh_header_nav li a:hover{
-	color: #c3ad80;
-}
-/* 导航栏隐藏部分 */
-.nav_hidden{
-	position: absolute;
-	width: 450px;
-	padding: 20px;
 	box-sizing: border-box;
-	display: none;
-	background: #fff;
-	box-shadow: 0 0 26px 0 rgba(0, 0, 0, .15);
-	z-index: 10;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 14px;
+	
 }
-.nav_hidden .sanjiao{
-	height: 15px;
-	width: 15px;
-	position: absolute;
-	top: -14px;
-	line-height: 15px;
-	left: 5px;
+.vh_header_top a{
+	color: #666;
 }
 
-.sanjiao img{
-	width:100%
+
+.vh_header_top .header_left{
+	float: left;
+	height: 40px;
+	width: 168px;
+	line-height: 40px;
+	margin-left: 60px;
+	margin-top: 30px;
 }
-.nav_hidden a{
+.fenge_line{
+	display: inline-block;
+	color: #b2b2b2;
+	font-size: 20px;
 	font-weight: 100;
-}		    
-.hidden_list{
-	position: relative;
-	min-height: 180px;
+    margin: 0px 18px;
+}
+.vh_header_top .header_center{
+	float: left;
+	width: 200px;
+	height: 67px;
+	margin: 16px 140px 0 300px;
+}
+.header_center img{
+	width: 100%;
+	height: 100%;
+	
+}
+.vh_header_top .header_right{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+
+}
+.header_right span{
+	float: left;
+}
+.header_right img{
+	margin-right: 10px;
+	margin-top: 13px;
+	float: left;
 }
 
-.hidden_list li{
-	padding-left: 2%;
-	padding-right: 0;
-	text-align: left;
-	white-space: nowrap;
-	line-height: 30px;
-	font-size: 14px;
+/* 底部黑色导航栏 */
+.vh_header_active {
+	width: 1263px;
+	height: 42px;
+	/* background-color: #222; */
+	background-color: rgba(0,0,0,0.8);
+	margin: 0 auto;
+	
 }
-.hidden_list_column1{
+
+
+.vh_header_fixed {
+	padding: 10px 0;
+	position: fixed;
+	left: 50%; 
+	top: 0;
+	margin-left: -632px;
+	z-index: 10;
+	background-color: #000e22;
+	opacity: 1;
+
+}
+.vh_logo{
 	height: 30px;
-	line-height: 30px;
-	width: 200px;
+    width: 30px;
+    position: absolute;
+    left: 30px;
+    top: 14px;
+    display: none;
 }
- 
-.hidden_list_column2{
-	position: absolute;
-	left: 100px;
-	top: 0px;
-	width: 110px;
-}	
-.hidden_list_column2 li{
-	width: 100%;
-	
+.vh_logo img{
+	height: 30px;
+	width: 30px;
+}
+.vh_nav{
+	width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.vh_nav .nav_list{
+	float: left;
+	padding: 0px 20px;
+	height: 42px;
+	line-height: 42px;
 }
 
-.hidden_jiantou{
-	float: right;
-	display: none;
-}
-.hidden_list_column3{
-	position: absolute;
-	left: 130px;
-	top: 0px;
-	width: 60px;
-	display: none;	
-}
 
-.hidden_list_column3 img{
-	width: 100%;
-	position: absolute;
-	left: 80px;
-	top: 0px;
-	width: 100px; 
-}   
-/* logo部分 */
-.vh_header #vh_logo1 {
-	display: inline-block;
-	width: 200px;
-	height: 67px;
-	position: absolute;
-	left: 50%;
-	margin-left: -110px;
-	margin-top: -5px;
-	
-	
-}
-.vh_header #vh_logo1 img{
-	
-	width: 200px;
-	height: 67px;
-}
-.vh_header #vh_logo2 {
-	display: inline-block;
-	width: 150px;
-	height: 40px;
-	position: absolute;
-	left: 50%;
-	margin-left: -75px;
-	margin-top: 10px;
-	display: none;
-	
-}
-.vh_header #vh_logo2 img{
-	
-	width: 150px;
-	height: 40px;
-}
-.vh_search{
-	float: right;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 8%;
-    margin-top: 15px;
-    position: relative;
-}
-.vh_search .search_input{
-	width: 200px;
-    float: left;
-	margin-right: 5px;
-}
-.search_input input{
-	width: 143px;
-	height: 28px;
-	float: left;
-	border: 1px solid #dcdcdc;
-	padding-left: 15px;
-}
-.search_input img{
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	float: left;
-	margin-left: 10px;
-	margin-top: 5px;
-	cursor: pointer;
-}
-.vh_search .loginAndReg{
-	float: left;
-	margin-right: 5px;
+.nav_list a{
 	font-size: 14px;
+	color: #fff;
 }
-.loginAndReg a:hover{
+.vh_nav .nav_search {
+	height: 40px;
+	width: 150px;
+	background-color: #d9d9d9;
+	float: right;
+	margin-top: 1px;
+	color: #fff;
+	position: relative;
+	margin-left: 50px;
+}
+.nav_search input{
+	height: 40px;
+	width: 140px;
+	background-color: #d9d9d9;
+	color: #fff;
+	padding-left: 10px;
+	font-size: 14px;
+	border: none;
+	background: url(../img/search.png) no-repeat 115px 12px;
+	background-size: 16px;
+}
+.vh_header_active .vh_user{
+	position: absolute;
+	display: none;
+    right: 30px;
+	top: 18px;
+    height: 40px;
+    line-height: 40px;
+}
+.vh_user img{
+	margin-right: 10px; 
+}      
+.box {
+	width: 1263px;
+	height: 400px;
+	background-color: pink;
+	
+}	
+/* 划过显示的导航列表 */
+.nav_contain{
+   width: 1263px;
+   background-color: #fff;
+   padding: 30px;
+   border-bottom: 1px solid #ccc;
+   display: none;
+   box-sizing: border-box;
+   position: absolute;
+   
+}
+.nav_clos:first-child{
+	margin-left: 242px;
+}
+.nav_contain .nav_clos{
+	float: left;
+	width: 135px;
+	/* line-height: 30px; */
+	margin-right: 50px;
+} 
+.nav_contain ul li{
+	line-height: 27px;
+}
+.nav_contain .nav_clos .nav_t{
+	font-size: 14px;
+    color: #1a1a1a;
+	
+}
+.nav_contain .nav_t{
+	font-size: 14px;    
+	line-height: 30px;
+}
+.nav_contain .nav_clos li a{
+	color: #808080;
+	font-size: 14px; 
+}
+
+/* 隐藏导航栏划过效果 */
+.nav_clos a:hover{
 	text-decoration: underline;
 }
-.loginAndReg .sep{
-	margin: 0px 15px;
-}
-.vh_search img{
+.nav_contain .nav_pic{
 	float: left;
+	width: 150px;
+	height: 150px;
 }
-.vh_search #carBox{
-	height: 20px;
-    width: 20px;
-    float: right;
-    line-height: 20px;
-    position: relative;
-    margin-top: 5px;
-	cursor: pointer;
+.nav_contain .nav_pic img{
+	width: 100%;
+	height: 100%;
 }
-
-.vh_search #carBox img{
-	width: 20px;
-	height: 20px;
-}
-.vh_search .font-change{
-	width: 83px;
-	height: 24px;
-	position: absolute;
-	right: -100px;
-	top: 5px;
-	overflow: hidden;
-}
-   
-.vh_search #fontBox1 , .vh_search #fontBox2 {
-	height: 24px;
-	line-height: 24px;
-	cursor: pointer;
-}
-#fontBox1 img ,  #fontBox2 img{
-	vertical-align: middle;
-}
-
 
 /* 底部 */
 .vh_footer{

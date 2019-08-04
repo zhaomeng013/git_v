@@ -1,4 +1,5 @@
 //一、类（轮播图）
+
 class BannerPlayer{
 	//构造函数
 	constructor(obj,boxDom){
@@ -35,7 +36,6 @@ class BannerPlayer{
 		this.addEvent();
 		this.autoPlay();
 	}
-	
 	//外观（html和css代码）
 	render(){
 		this.boxDom.style.position = "relative";
@@ -289,30 +289,95 @@ class BannerPlayer{
 	}
 
 }
-//产品划过阴影效果
-function huaguo(uldom){
-		let listDoms = uldom.children;
-		for(let i=0;i<listDoms.length;i++){
-			// console.log(listDoms[i])
-			listDoms[i].onmouseover = ()=>{
-				listDoms[i].style.boxShadow = "0px 0px 20px #d9d9d9";
-			}
-			listDoms[i].onmouseout  =()=>{
-				listDoms[i].style.boxShadow = "none";
-			}
+jQuery.fn.extend({
+	// 商品划过效果
+	huoguo: function(uldom) {
+		let liDoms = $(uldom).children()
+		for(let i=0;i<liDoms.length;i++){
+			$(liDoms[i]).bind({
+				mouseover:function(){$(liDoms[i]).css("box-shadow","0px 0px 20px #d9d9d9");},  
+				mouseout:function(){$(liDoms[i]).css("box-shadow","none");}  
+			})
+		
 		}
-	}
+  }
+  
+});
+//商品划过效果
+
+$(".list_ul_1").huoguo($(".list_ul_1"))
+
+
 //  导航栏划过效果
-function navMouseover(event){
-		var evt = event || window.event;
-		if(evt.pageY == evt.clientY){
-			getDom("#vh_logo1").style.display = "block"
-			getDom("#vh_logo2").style.display = "none"
-			getDom("div")[0].className ="vhheader";
-		}else{
-			getDom("#vh_logo1").style.display = "none"
-			getDom("#vh_logo2").style.display = "block"
-			getDom("div")[0].className ="vhheader_padding";
-			
-		}
+window.onmousewheel= function(event){
+	var evt = event || window.event;
+	if(evt.pageY > evt.clientY){
+		$(".vh_header_active").addClass("vh_header_fixed")
+		$(".vh_header_top").hide()
+		$(".nav_search").hide()
+		$(".vh_logo").show()
+		$(".vh_user").show()
+		$(".nav_contain").css('margin-top','10px')
+	}else{
+		$(".vh_header_active").removeClass("vh_header_fixed")
+		$(".vh_header_top").show()
+		$(".vh_logo").hide()
+		$(".nav_search").show()
+		$(".vh_user").hide()
+		$(".nav_contain").css('margin-top','0')
+
 	}
+}
+//划过鼠标出现隐藏导航栏
+$("#li_focus").mouseenter(function(){
+	$(".nav_contain").show()
+	
+})
+$(".nav_contain").mouseenter(function(){
+	$(".nav_contain").show()
+})
+$(".nav_contain").mouseleave(function(){
+		$(".nav_contain").hide()
+	
+	})
+$("#li_focus").mouseleave(function(){
+	$(".nav_contain").hide()
+	
+})
+//视频播放
+$("#video_img").click(function(){
+	$("video").show()
+	$("#close").show()
+})
+$("#close").click(function(){
+	$("video").hide()
+	$("#close").hide()
+})
+
+
+
+
+
+//注册登录方式变化
+$(document).ready(function(){
+	$("#currenMethod").click(function(){
+		$(this).css("color","#333")
+		$(this).next().css("color","#999")
+		$(".quick_login").css("display","block")
+		$(".account_login").css("display","none")
+
+	})
+	$("#activeMethod").click(function(){
+		$(this).css("color","#333")
+		$(this).prev().css("color","#999")
+		$(".quick_login").css("display","none")
+		$(".account_login").css("display","block")
+	
+	})
+	
+});
+
+
+
+
+

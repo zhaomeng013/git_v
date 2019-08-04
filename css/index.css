@@ -16,16 +16,18 @@ body{
 }
 /* vh_body */
 .vh_body{
-	margin-top: 101px;
 	width: 100%;
 }
 /* banner1部分 */
 /* 面向对象轮播图 */
 #banner1{
-	margin-top: 101px;
+	/* margin-top: 101px; */
 	width: 1263px;
 	height: 464px;
 	margin: 0 auto;
+}
+#banner1 img{
+	width: 100%;
 }
 /* 新品推荐 */
 .vh_tuijian1 {
@@ -141,8 +143,13 @@ body{
 }
 /* 视频部分 */
 #vh_video{
-	margin-top: 100px;
+	width: 1263px;
+	margin: 100px auto 0;
+	/* margin: 0 auto; */
 	position: relative;
+}
+#vh_video img{
+	width: 100%;
 }
 video{
 	display: none;

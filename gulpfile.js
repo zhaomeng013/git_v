@@ -34,7 +34,6 @@ gulp.task("watchall",async ()=>{
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\pro_vhlondon\\css"));
 	})
 	
-	// 图片无法实现监听????
 	gulp.watch("img/*.*",async ()=>{
 		gulp.src("img/*.*")
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\pro_vhlondon\\img"));

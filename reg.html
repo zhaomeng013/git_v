@@ -12,133 +12,117 @@
 
 	</head>
 	<body>
-		<!-- header -->
-		<div class="vhheader">
-			<div class="vh_header">
-				<!-- 左侧导航栏 -->
-				<ul class="vh_header_nav">
-					<li id="currentA">
+		<div class="vh_header">
+			<!-- 上面白色导航栏-->
+			<div class="vh_header_top">
+				<div class="header_left">
+					<span>
+						<a href="">常见问题</a>
+					</span>
+					<span class="fenge_line">|</span>
+					<span>
+						<a href="">门店专柜</a>
+					</span>
+				</div>
+				<!-- 中间logo部分-->
+				<div class="header_center">
+					<a id="vh_logo1" href="http://www.vhlondon.cn/" >
+						<img src="img/vh_logo1.png">
+					</a>
+				</div>
+				
+				<!-- 右边 -->
+				<div class="header_right">
+					<span>
+						<a href="">登录与注册</a>
+					</span>
+					<span class="fenge_line">|</span>
+					<span>
+						<a href="">
+							<img src="img/shop.png" alt="">
+							<span>我的购物袋</span>
+						</a>
+					</span>
+					<span class="fenge_line">|</span>
+					<span>
+						<a href="">繁体切换</a>
+					</span>
+				</div>
+			</div>
+			
+			<!--  黑色导航部分 -->
+			<div class="vh_header_active">
+				<!-- 右边logo -->
+				<div class="vh_logo">
+					<a href=""><img src="img/vh_foot_logo.png" alt=""></a>
+				</div>
+				<!--  中间导航栏 -->
+				<ul class="vh_nav">
+					<li class="nav_list" id="li_focus">
 						<a href="http://www.vhlondon.cn/" >手表</a>
-						<!-- 鼠标划过显示的导航栏 -->
-						<div class="nav_hidden">
-							<div class="sanjiao">
-								<img src="img/jiantou.png" >
-							</div>
-							<div class="hidden_list">
-								<ul>
-									<li>
-										<div class="hidden_list_column1">
-											<a href="#">所有手表</a>
-										</div>
-										
-										<div class="hidden_list_column2">
-											<ul id="sixlist1">
-												<li>
-													
-													<a href="" class="sixlist">FLOAT系列</a>
-													<span class="hidden_jiantou">></span>
-													<ul class="hidden_list_column3">
-														<li>
-															<a href="#">所有手表</a>
-															<img src="img/n4.jpg" >
-														</li>
-														<li>
-															<a href="#">男表</a>
-														</li>
-														<li>
-															<a href="#">女表</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="" class="sixlist">DREAM系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">QUEENS系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">TRAVEL系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">TREND系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">CASTLE系列</a>
-													<span class="hidden_jiantou">></span>
-	
-												</li>
-											</ul>
-										
-									</li>
-									<li>
-										<div class="hidden_list_column1">
-											<a href="#">男表</a>
-										</div>								
-									</li>
-									<li>
-										<div class="hidden_list_column1">
-											<a href="#">女表</a>
-										</div>
-									</li>
-								</ul>
-							
-							</div>
-						</div>
+						
 					</li>
-					<!--  左边后四个导航栏 -->
-					<li>
+					
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">礼盒</a>
 					</li>
-					<li>
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">配饰</a>
 					</li>
-					<li>
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">表带</a>
 					</li>
-					<li>
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">变身男女</a>
 					</li>
+					<li class="nav_search">
+						<input type="text" name="" id="" value="搜索" placeholder=""/>
+					</li>
 				</ul>
-				<!-- 中间logo部分-->
-				<a href="http://www.vhlondon.cn/" id="vh_logo1">
-					<img src="img/vh_logo1.png">
-				</a>
-				<a href="http://www.vhlondon.cn/" id="vh_logo2">
-					<img src="img/vh_logo2.png" >
-				</a>
-				<!-- 右边搜索部分 -->
-				<div class="vh_search">
-					<div class="search_input">
-						<input type="text" name="" id="" placeholder="请输入搜索商品"/>
-						<img src="img/search.png" >
+				<!--  导航栏右边个人信息部分 -->
+				<div  class="vh_user">
+					<span>
+						<a href=""><img src="img/user_icon.png" alt=""></a>
+					</span>
+					<span>
+						<a href=""><img src="img/go_shop_icon.png" alt=""></a>
+					</span>
+					<span>
+						<a href=""><img src="img/fanti.png" alt=""></a>
+					</span>
+				</div>
+				<!-- 划过显示的导航列表 -->
+				<div class="nav_contain">
+					<div class="nav_clos">
+						<div class="nav_t">所有手表</div>
+						<ul>
+							<li><a href="">FLOAT系列</a></li>
+							<li><a href="">DREAM系列</a></li>
+							<li><a href="">QUEENS系列</a></li>
+							<li><a href="">TRAVEL系列</a></li>
+							<li><a href="">TREND系列</a></li>
+							<li><a href="">CASTLE系列</a></li>
+						</ul>
 					</div>
-					<div class="loginAndReg">
-						<span class="sep">|</span>
-						<span id="reg">
-							<a href="http://www.vhlondon.cn/">登录 / 注册</a>
-						</span>
-						<span class="sep">|</span>
+					<div class="nav_clos">
+						<div class="nav_t">女士手表</div>
+						<ul>
+							<li><a href="">FLOAT系列</a></li>
+							<li><a href="">DREAM系列</a></li>
+							<li><a href="">QUEENS系列</a></li>
+							<li><a href="">TRAVEL系列</a></li>
+							<li><a href="">TREND系列</a></li>
+						</ul>
 					</div>
-					<div id="carBox">
-						<img src="img/car.png" id="car">
-						
+					<div class="nav_clos">
+						<div class="nav_t">男士手表</div>
+						<ul>
+							<li><a href="">TREND系列</a></li>
+							<li><a href="">CASTLE系列</a></li>
+						</ul>
 					</div>
-					<div class="font-change">
-						<div id="fontBox1">
-							<img src="img/font_c6.png" id="font">
-						</div>
-						<div id="fontBox2">
-							<img src="img/font_c5.png" id="font">
-						</div>
-					</div>
+					<div class="nav_pic">
+						<img src="img/n2.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -319,88 +303,6 @@
 	</body>
 </html>
 
+<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script> -->
 <script type="text/javascript" src="js/vh_min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
-<script type="text/javascript">
-	//导航栏变化
-	
-	window.onmousewheel= navMouseover	
-	
-	//划过鼠标出现隐藏导航栏
-	getDom("#currentA").onmouseover = function(){
-		getDom(".nav_hidden")[0].style.display = "block";
-		
-	}
-	getDom("#currentA").onmouseout = function(event){
-		var evt = event || window.event;
-		if(evt.offsetY<0 || evt.offsetX<0 || evt.offsetX>getDom("#currentA").offsetWidth){
-			getDom(".nav_hidden")[0].style.display = "none";
-		}
-		
-	}
-	
-	//注册方式切换
-	window.onload = function(){
-		getDom("#currenMethod").onclick = function(){
-			this.style.color = "#333";
-			this.nextElementSibling.style.color = "#999"
-			getDom(".quick_login")[0].style.display = "block";
-			getDom(".account_login")[0].style.display = "none";
-		
-		}
-		getDom("#activeMethod").onclick = function(){
-			this.style.color = "#333";
-			this.previousElementSibling.style.color = "#999"
-			getDom(".quick_login")[0].style.display = "none";
-			getDom(".account_login")[0].style.display = "block";
-		}
-		
-	}
-	
-	// 获取手机验证码按钮
-	// 接口文档:
-	/*
-	请求地址:reg.php
-	请求方式:get
-	请求参数:phoneCode
-	响应数据："六位手机验证码" 如"898213"	????
-	*/
-	function getCodeF(){
-		$("#getCode").click(function(){
-			//获取手机号
-			let phoneCode = $(".txt:first").val()
-			//判断数据是否为空
-			if(phoneCode ==""){
-				
-				alert("电话号码不能为空")
-			}else{
-				//发送ajax请求
-				// $.get("reg.php",{phoneCode:phoneCode},function(data){
-				// 	console.log("data:"data)
-				// })
-				console.log("1")
-			}
-			
-			
-		})
-		
-	}
-	getCodeF()
-	
-	
-	
-	
-	
-	
-	
-	
-	function getDom(str){
-		if(str.charAt(0)=="#"){
-			return document.getElementById(str.substring(1));
-		}else if(str.charAt(0)=="."){
-			return document.getElementsByClassName(str.substring(1));
-		}else{
-			return document.getElementsByTagName(str);
-		}
-	}
-</script>

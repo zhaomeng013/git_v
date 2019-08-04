@@ -3,154 +3,143 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="shortcut icon" href=" img/logo.ico" /> 
-		<!-- <link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.css"/> -->
+		<link rel="shortcut icon" href=" img/logo.ico" />
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/vh_min.css"/>
+
 	</head>
 	<body>
 		<!-- header -->
-		<div class="vhheader">
-			<div class="vh_header">
-				<!-- 左侧导航栏 -->
-				<ul class="vh_header_nav">
-					<li id="currentA">
+		<div class="vh_header">
+			<!-- 上面白色导航栏-->
+			<div class="vh_header_top">
+				<div class="header_left">
+					<span>
+						<a href="">常见问题</a>
+					</span>
+					<span class="fenge_line">|</span>
+					<span>
+						<a href="">门店专柜</a>
+					</span>
+				</div>
+				<!-- 中间logo部分-->
+				<div class="header_center">
+					<a id="vh_logo1" href="http://www.vhlondon.cn/" >
+						<img src="img/vh_logo1.png">
+					</a>
+				</div>
+				
+				<!-- 右边 -->
+				<div class="header_right">
+					<span>
+						<a href="">登录与注册</a>
+					</span>
+					<span class="fenge_line">|</span>
+					<span>
+						<a href="">
+							<img src="img/shop.png" alt="">
+							<span>我的购物袋</span>
+						</a>
+					</span>
+					<span class="fenge_line">|</span>
+					<span>
+						<a href="">繁体切换</a>
+					</span>
+				</div>
+			</div>
+			
+			<!--  黑色导航部分 -->
+			<div class="vh_header_active">
+				<!-- 右边logo -->
+				<div class="vh_logo">
+					<a href=""><img src="img/vh_foot_logo.png" alt=""></a>
+				</div>
+				<!--  中间导航栏 -->
+				<ul class="vh_nav">
+					<li class="nav_list" id="li_focus">
 						<a href="http://www.vhlondon.cn/" >手表</a>
-						<!-- 鼠标划过显示的导航栏 -->
-						<div class="nav_hidden">
-							<div class="sanjiao">
-								<img src="img/jiantou.png" >
-							</div>
-							<div class="hidden_list">
-								<ul>
-									<li>
-										<div class="hidden_list_column1">
-											<a href="#">所有手表</a>
-										</div>
-										
-										<div class="hidden_list_column2">
-											<ul id="sixlist1">
-												<li>
-													
-													<a href="" class="sixlist">FLOAT系列</a>
-													<span class="hidden_jiantou">></span>
-													<ul class="hidden_list_column3">
-														<li>
-															<a href="#">所有手表</a>
-															<img src="img/n4.jpg" >
-														</li>
-														<li>
-															<a href="#">男表</a>
-														</li>
-														<li>
-															<a href="#">女表</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="" class="sixlist">DREAM系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">QUEENS系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">TRAVEL系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">TREND系列</a>
-													<span class="hidden_jiantou">></span>
-
-												</li>
-												<li>
-													<a href="" class="sixlist">CASTLE系列</a>
-													<span class="hidden_jiantou">></span>
-	
-												</li>
-											</ul>
-										
-									</li>
-									<li>
-										<div class="hidden_list_column1">
-											<a href="#">男表</a>
-										</div>								
-									</li>
-									<li>
-										<div class="hidden_list_column1">
-											<a href="women.html">女表</a>
-										</div>
-									</li>
-								</ul>
-							
-							</div>
-						</div>
+						
 					</li>
-					<!--  左边后四个导航栏 -->
-					<li>
+					
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">礼盒</a>
 					</li>
-					<li>
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">配饰</a>
 					</li>
-					<li>
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">表带</a>
 					</li>
-					<li>
+					<li class="nav_list">
 						<a href="http://www.vhlondon.cn/">变身男女</a>
 					</li>
+					<li class="nav_search">
+						<input type="text" name="" id="" value="搜索" placeholder=""/>
+					</li>
 				</ul>
-				<!-- 中间logo部分-->
-				<a href="http://www.vhlondon.cn/" id="vh_logo1">
-					<img src="img/vh_logo1.png">
-				</a>
-				<a href="http://www.vhlondon.cn/" id="vh_logo2">
-					<img src="img/vh_logo2.png" >
-				</a>
-				<!-- 右边搜索部分 -->
-				<div class="vh_search">
-					<div class="search_input">
-						<input type="text" name="" id="" placeholder="请输入搜索商品"/>
-						<img src="img/search.png" >
+				<!--  导航栏右边个人信息部分 -->
+				<div  class="vh_user">
+					<span>
+						<a href=""><img src="img/user_icon.png" alt=""></a>
+					</span>
+					<span>
+						<a href=""><img src="img/go_shop_icon.png" alt=""></a>
+					</span>
+					<span>
+						<a href=""><img src="img/fanti.png" alt=""></a>
+					</span>
+				</div>
+				<!-- 划过显示的导航列表 -->
+				<div class="nav_contain">
+					<div class="nav_clos">
+						<div class="nav_t">所有手表</div>
+						<ul>
+							<li><a href="">FLOAT系列</a></li>
+							<li><a href="">DREAM系列</a></li>
+							<li><a href="">QUEENS系列</a></li>
+							<li><a href="">TRAVEL系列</a></li>
+							<li><a href="">TREND系列</a></li>
+							<li><a href="">CASTLE系列</a></li>
+						</ul>
 					</div>
-					<div class="loginAndReg">
-						<span class="sep">|</span>
-						<span id="reg">
-							<a href="login.html">登录 / 注册</a>
-						</span>
-						<span class="sep">|</span>
+					<div class="nav_clos">
+						<div class="nav_t">女士手表</div>
+						<ul>
+							<li><a href="">FLOAT系列</a></li>
+							<li><a href="">DREAM系列</a></li>
+							<li><a href="">QUEENS系列</a></li>
+							<li><a href="">TRAVEL系列</a></li>
+							<li><a href="">TREND系列</a></li>
+						</ul>
 					</div>
-					<div id="carBox">
-						<img src="img/car.png" id="car">
-						
+					<div class="nav_clos">
+						<div class="nav_t">男士手表</div>
+						<ul>
+							<li><a href="">TREND系列</a></li>
+							<li><a href="">CASTLE系列</a></li>
+						</ul>
 					</div>
-					<div class="font-change">
-						<div id="fontBox1">
-							<img src="img/font_c6.png">
-						</div>
-						<div id="fontBox2">
-							<img src="img/font_c5.png">
-						</div>
-					</div>
+					<div class="nav_pic">
+						<img src="img/n2.jpg" alt="">
 					</div>
 				</div>
 			</div>
+			
+			
 		</div>
 		<!-- body部分 -->
 		<div class="vh_body">
 			<!-- banner1 -->
 			<div id="banner1">
+				<img src="img/b2.jpg" >
 			</div>
 			<!-- 新品推荐 -->
 			<div class="vh_tuijian1">
 				<div class="tuijian_titile">新品推荐</div>
 				<div class="tuijian_line"></div>
 				<div class="tuijian_list">
-					<ul id="list_ul_1">
+					<ul class="list_ul_1">
 						<li class="list_1">
 							<a href="http://www.vhlondon.cn/index.php?m=Home&c=Shop&a=productDetail&product_id=921">
 								<img src="img/t1.jpg" >
@@ -241,13 +230,14 @@
 						</a>
 					</div>
 				</div>
+
 			</div>
 			
 			<!-- 小视频，默认隐藏状态????? -->
 			<div id="vh_video">
 				<img  id="video_img" src="img/video.jpg" alt="">
 				<div id="close">×</div>
-				<video controls autoplay loop width="1000">
+				<video controls width="1000">
 					<source src="img/vh_video.mp4" type="video/mp4"></source>
 					<source src="img/vh_video.ogv" type="video/ogg"></source>
 					<source src="img/vh_video.webm" type="video/webm"></source>
@@ -258,7 +248,7 @@
 				<div class="tuijian_titile">精选推荐</div>
 				<div class="tuijian_line"></div>
 				<div class="tuijian_list">
-					<ul id="list_ul_2">
+					<ul class="list_ul_1">
 						<li class="list_1">
 							<a href="http://www.vhlondon.cn/index.php?m=Home&c=Shop&a=productDetail&product_id=921">
 								<img src="img/j1.jpg" >
@@ -294,6 +284,7 @@
 						
 					</ul>
 				</div>
+				
 			</div>
 			<!-- 照片墙 -->
 			<div class="picture_wall">
@@ -549,7 +540,7 @@
 					<div class="vh_vip">
 						<p class="vh_vip_title">会员俱乐部</p>
 						<a href="#">
-							<img src="img/vh_foot_logo.png" >
+							<img src="img/vip.png" >
 						</a>
 					</div>
 					<div class="vh_dingyue">订阅我们</div>
@@ -573,76 +564,6 @@
 		</div>
 	</body>
 </html>
-
-<!-- <script type="text/javascript" src="js/js.js"></script> -->
-<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> -->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/vh_min.js"></script>
-<script type="text/javascript">
-	//导航栏变化
-	
-	window.onmousewheel= function(event){
-		var evt = event || window.event;
-		if(evt.pageY == evt.clientY){
-			getDom("#vh_logo1").style.display = "block"
-			getDom("#vh_logo2").style.display = "none"
-			getDom("div")[0].className ="vhheader";
-		}else{
-			getDom("#vh_logo1").style.display = "none" 
-			getDom("#vh_logo2").style.display = "block"
-			getDom("div")[0].className ="vhheader_padding";
-
-		}
-	}	
-	
-	//划过鼠标出现隐藏导航栏
-	getDom("#currentA").onmouseover = function(){
-		getDom(".nav_hidden")[0].style.display = "block";
-		
-	}
-	getDom("#currentA").onmouseout = function(event){
-		var evt = event || window.event;
-		if(evt.offsetY<0 || evt.offsetX<0 || evt.offsetX>getDom("#currentA").offsetWidth){
-			getDom(".nav_hidden")[0].style.display = "none";
-		}
-		
-	}
-	
-	
-	// banner1轮播图
-	window.onload = function(){
-		new BannerPlayer({
-			width:1263,
-			height:464,
-			imgs:["img/b1.jpg","img/b2.jpg","img/b3.jpg"],
-			timeSpace:3000
-			
-		},getDom("#banner1"))
-	}
-	// 新品推荐  精选推荐，划过效果
-	huaguo(getDom("#list_ul_1"))
-	huaguo(getDom("#list_ul_2"))
-	
-	
-	//视频播放
-	getDom("#video_img").onclick = function(){
-		getDom("video")[0].style.display ="block"
-
-		getDom("#close").style.display = "block"
-	}
-	getDom("#close").onclick =function(){
-		getDom("video")[0].style.display ="none"
-		getDom("#close").style.display = "none"
-	
-	
-	}
-	
-	function getDom(str){
-		if(str.charAt(0)=="#"){
-			return document.getElementById(str.substring(1));
-		}else if(str.charAt(0)=="."){
-			return document.getElementsByClassName(str.substring(1));
-		}else{
-			return document.getElementsByTagName(str);
-		}
-	}
-</script>
