@@ -2,6 +2,7 @@ body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,hr,input,td,select,textarea{
 	margin:0;
 	padding: 0;
 }
+
 a {
 	text-decoration: none;
 	color:black;
@@ -34,7 +35,7 @@ body{
 	width: 1243px;
 	margin: 60px auto;
 }
-.vh_tuijian1 .tuijian_titile{
+.vh_tuijian1 .tuijian_title{
     text-align: center;
     font-size: 28px;
     font-weight: 700;

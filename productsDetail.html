@@ -4,12 +4,11 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="shortcut icon" href=" img/logo.ico" /> 
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/1.css"/>
 
-		<!-- <link rel="stylesheet" type="text/css" href="css/public.css"/>
-		<link rel="stylesheet" type="text/css" href="css/productsDetail.css"/> -->
-		<link rel="stylesheet" type="text/css" href="css/vh_min.css"/>
-
-
+		<!-- <link rel="stylesheet" type="text/css" href="css/vh_min.css"/> -->
+		<link rel="stylesheet" type="text/css" href="sass_css/productpage.css"/>
 	</head>
 	<body>
 		<div class="vh_header">
@@ -134,9 +133,10 @@
 				<div class="mirror">
 					<div class="mirror_left">
 						<div class="mirror_pic">
-							<img src="img/m1.jpg" alt="">
-							<!-- <div id="mirror_show"></div> -->
+							<img src="img/m1.jpg" alt="" >
+							<div class="mirror_box"></div>
 						</div>
+						<div class="mirror_show"></div>
 						<div class="mirror_pic_box">
 								<div class="arrow_l">
 									<span><</span>
@@ -213,31 +213,137 @@
 					</div>
 
 				</div>
-					
+				
 			</div>
-		
-			
-			<!--  小视频 -->
-			<div class="vh_video_img">
-				<img src="img/video.jpg" >
+			<!-- 手表配置 -->
+			<div class="products_info">
+				<ul class="details">
+					<li>
+						<span class="tit">机芯</span>
+						<span class="data">日本进口机芯</span>
+					</li>
+					<li>
+						<span class="tit">表带</span>
+						<span class="data">针眼纹（真皮）棕色</span>
+					</li>
+					<li>
+						<span class="tit">表镜</span>
+						<span class="data">抗磨损矿物质玻璃</span>
+					</li>
+					<li>
+						<span class="tit">表径</span>
+						<span class="data">28MM</span>
+					</li>
+					<li>
+						<span class="tit">表盘厚度</span>
+						<span class="data">7.35MM</span>
+					</li>
+					<li>
+						<span class="tit">防水</span>
+						<span class="data">3ATM</span>
+					</li>
+					<li>
+						<span class="tit">表带长度</span>
+						<span class="data">上：65MM 下：105MM</span>
+					</li>
+					<li>
+						<span class="tit">表带宽度</span>
+						<span class="data">10MM</span>
+					</li>
+				</ul>
 			</div>
-			<!-- 小视频，默认隐藏状态????? -->
-			<div class="vh_video">
-			<!-- 	<video src="img/vh_video.mp4" controls="controls" width="100
-				%" height="100%"></video> -->
+			<!-- 日常保养 -->
+			<div class="daily_protect">
+				<div class="protect_tit">日常保养</div>
+				<div class="protect_details">
+					<div>
+						<img src="img/fangshui.jpg" alt="">
+						<p>30米生活防水</p>
+					</div>
+					<div>
+						<img src="img/qingjie.jpg" alt="">
+						<p>可用软布擦拭或软刷清洁</p>
+					</div>
+					<div>
+						<img src="img/jianruiwu.jpg" alt="">
+						<p>避免接触尖锐物</p>
+					</div>
+					<div>
+						<img src="img/shuixi.jpg" alt="">
+						<p>请勿在潮湿环境中佩戴(浴室,泳池等)</p>
+					</div>
+				</div>
+			</div>
+			<!--  服务说明 -->
+			<div class="server_explain">
+				<div class="explain_tit">服务说明</div>
+				<div class="server_list">
+					<div>
+						<h3>免邮服务</h3>
+						<p>全场采用顺丰、EMS 等物流配送方式，覆盖中国大陆地区以及港澳台地区，顺丰无法送达区域将提供EMS或其余配送方式尽快送达。</p>
+					</div>
+					<div>
+						<h3>1年保修</h3>
+						<p>凡在官网购买的商品，均享受一年机芯免费维修服务。保修期满或非保修范围问题为您提供专业的有偿维修保养服务。</p>
+					</div>
+					<div>
+						<h3>7天无理由退换</h3>
+						<p>若您对所购商品不满意，在确保商品完整且不影响二次销售的情况下，我们为您提供7天无理由退换货服务。</p>
+					</div>
+					<div>
+						<h3>正品保障</h3>
+						<p>官网所销售的产品均为 VICTORIA HYDE 品牌原装正品。为保障您的合法权益及优质购物体验,请认准官方渠道购买。</p>
+					</div>
+				</div>
+			</div>
+			<!-- 表带更换教程 -->
+			<div class="watchband_change">
+				<div class="change_tit">更换表带教程</div>
+				<a href=""><img src="img/shiping.jpg" alt=""></a>
+				<p>更换表带教程，学习如何拆卸皮质/钢带表</p>
+			</div>
+			<!-- 热卖展示墙 -->
+			<div class="show_wall">
+				<div class="show_tit1">#Talent recommendation</div>
+				<div class="show_tit2">我们要时尚，但我们更要与众不同</div>
+				<div class="show_pictures">
+					<div>
+						<a href=""><img src="img/d1.jpg" alt=""></a>
+					</div>
+					<div>
+						<a href=""><img src="img/d2.jpg" alt=""></a>
+					</div>
+					<div>
+						<a href=""><img src="img/d3.jpg" alt=""></a>
+					</div>
+					<div>
+						<a href=""><img src="img/d4.jpg" alt=""></a>
+					</div>
+					<div>
+						<a href=""><img src="img/h2.jpg" alt=""></a>
+					</div>
+					<div>
+						<a href=""><img src="img/h7.jpg" alt=""></a>
+					</div>
+				</div>
+
 			</div>
 			<!-- 精选推荐 -->
 			<div class="vh_tuijian1">
-				<div class="tuijian_titile">精选推荐</div>
-				<div class="tuijian_line"></div>
+				<div class="tuijian_title">精选推荐</div>
+				<div class="tuijian_line1"></div>
+				<div class="tuijian_info">Selection of recommended</div>
 				<div class="tuijian_list">
-					<ul id="list_ul_1">
+					<ul class="list_ul_1">
 						<li class="list_1">
 							<a href="http://www.vhlondon.cn/index.php?m=Home&c=Shop&a=productDetail&product_id=921">
 								<img src="img/j1.jpg" >
 								<span>ROME</span>
 								<span>分开旅行</span>
-								<span>￥899</span>
+								<span>
+									￥899
+									<del>￥899</del>
+								</span>
 							</a>
 						</li>
 						<li class="list_1">
@@ -245,7 +351,10 @@
 								<img src="img/j2.jpg" >
 								<span>ROME</span>
 								<span>迷失星辰</span>
-								<span>￥899</span>
+								<span>
+									￥899
+									<del>￥899</del>
+								</span>
 							</a>
 						</li>
 						<li class="list_1">
@@ -253,7 +362,10 @@
 								<img src="img/j3.jpg" >
 								<span>ROME</span>
 								<span>蓝莓之夜</span>
-								<span>￥899</span>
+								<span>
+									￥899
+									<del>￥899</del>
+								</span>
 							</a>
 						</li>
 						<li class="list_1">
@@ -261,7 +373,10 @@
 								<img src="img/j4.jpg" >
 								<span>ROME</span>
 								<span>观光巴士</span>
-								<span>￥899</span>
+								<span>
+									￥899
+									<del>￥899</del>
+								</span>
 							</a>
 						</li>
 						
@@ -396,6 +511,6 @@
 		</div>
 	</body>
 </html>
-<!-- <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script> -->
-<script type="text/javascript" src="js/vh_min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<!-- <script type="text/javascript" src="js/vh_min.js"></script> -->

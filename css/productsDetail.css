@@ -33,6 +33,10 @@
 	height: 510px;
 	position: relative;
 }
+.mirror_pic img{
+	width: 100%;
+	display: block;
+}
 /* jquery 动态创建div的样式 */
 .mirror_pic .mirror_show{             
 	width: 100%;
@@ -49,10 +53,7 @@
 	background: url(../img/m1.jpg)  ;
 
 }
-.mirror_pic img{
-	width: 100%;
-	display: block;
-}
+
 
 /* 底部图片列表 */
 .mirror_pic_box{
@@ -103,6 +104,7 @@
 	padding: 0 50px;
 	display: flex;
 	overflow: hidden;
+	/* transform:translate(127px); */
 }
 .pro_list div{
 	float: left;
@@ -262,37 +264,67 @@
 	font-weight: 100;
 }
 
-/* 视频部分 */
-.vh_video_img{
+/* 产品介绍 */
+.products_info{
 	width: 1263px;
+	height: 414px;
 	margin: 0 auto;
-	cursor: pointer;
 }
-.vh_video_img img{
-	width: 100%;
+.products_info .details{
+	width: 580px;
+	float: right;
+	margin: 30px 131px 60px 0px;
+	font-size: 14px;
 }
+.details li{
+	border-bottom: 1px solid #dadada;
+	line-height: 40px;
+	
+	
+}
+
+.details li:last-child{
+	border-bottom: none;
+	
+}
+/* .details .tit{
+	float: left;
+}
+.details .data{
+	float: right;
+} */
 
 /* 新品推荐 */
 .vh_tuijian1 {
 	width: 1243px;
 	margin: 60px auto;
 }
-.vh_tuijian1 .tuijian_titile{
+.vh_tuijian1 .tuijian_title{
     text-align: center;
     font-size: 28px;
     font-weight: 700;
     line-height: 50px;
     color: #444;
 }
-.tuijian_line{
-	width: 70px;
-    height: 3px;
-    background-color: #000e22;
-    margin: auto;
+.tuijian_line1{
+	height: 1px;
+    width: 800px;
+    background-color: #000000;
+    margin: 20px auto;
 }
-.tuijian_list{
-	margin-top: 70px;
-}
+.tuijian_info{
+	font-size: 18px;
+	width: 300px;
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	left: 50%;
+	top:-40px;
+	margin-left: -150px;
+	text-align: center;
+}   
+
 .tuijian_list ul{
 	display: flex;
 	justify-content: space-around;

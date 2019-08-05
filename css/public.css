@@ -166,12 +166,7 @@ body{
 .vh_user img{
 	margin-right: 10px; 
 }      
-.box {
-	width: 1263px;
-	height: 400px;
-	background-color: pink;
 	
-}	
 /* 划过显示的导航列表 */
 .nav_contain{
    width: 1263px;

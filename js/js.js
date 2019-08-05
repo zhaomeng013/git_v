@@ -302,6 +302,7 @@ jQuery.fn.extend({
 		}
   }
   
+  
 });
 //商品划过效果
 
@@ -345,6 +346,7 @@ $("#li_focus").mouseleave(function(){
 	
 })
 //视频播放
+
 $("#video_img").click(function(){
 	$("video").show()
 	$("#close").show()
@@ -353,6 +355,8 @@ $("#close").click(function(){
 	$("video").hide()
 	$("#close").hide()
 })
+
+
 
 
 
@@ -376,7 +380,86 @@ $(document).ready(function(){
 	})
 	
 });
+//放大镜
+$(".mirror_pic").bind({
+	mousemove:function(e){
+		$(".mirror_box").show()
+		$(".mirror_show").show()
+		let mouseX = e.pageX - $(".mirror_pic").offset().left-$(".mirror_box").width()/2;
+		let mouseY = e.pageY - $(".mirror_pic").offset().top-$(".mirror_box").height()/2;
+		
+		// 判断边界
+		if(mouseX<0){
+			mouseX = 0
+		}else if(mouseX>250){
+			mouseX =250
+		}
+		if(mouseY<0){
+			mouseY = 0
+		}else if(mouseY>250){
+			mouseY =250
+		}
+		
+		$(".mirror_box").css({left:mouseX+"px",top:mouseY+"px"})
+		$(".mirror_show").css({
+			backgroundPositionX:-2*mouseX+"px",
+			backgroundPositionY:-2*mouseY+"px"
+			})
+		
+		// console.log("x:"-1*mouseX)
+		// console.log(-1*mouseY)
+	},
+	mouseleave:function(){
+		$(".mirror_box").hide()
+		$(".mirror_show").hide()
 
+	}
+
+})
+
+
+//  放大镜底部轮播图
+$(document).ready(function(){
+	$(".arrow_r").click(function(){
+		movenext();
+	});
+	function movenext(){
+	$(".pro_list div:first-child").animate({marginLeft:"-120px"},100,function(){
+		var temp=$(this).clone();
+			$(this).remove();
+			temp.css({marginLeft:"0"});
+		$(".pro_list").append(temp);
+	});
+	}
+		
+});
+$(document).ready(function(){
+	$(".arrow_l").click(function(){
+		moveprev();
+	});
+	function moveprev(){
+		var temp=$(".pro_list div:last-child").clone();
+		$(".pro_list div:last-child").remove();
+		temp.css({marginLeft:"120px"});
+		$(".pro_list").prepend(temp);
+		$(".pro_list div:first-child").animate({marginLeft:"0px"},100);
+	}
+});
+
+
+// 详情页底部轮播图
+	$(document).ready(function show(){
+		$(".show_pictures div:first-child").animate({marginLeft:"-318px"},500,function(){
+			let temp = $(this).clone();
+			$(this).remove();
+			temp.css({marginLeft:"0px"});
+			$(".show_pictures").append(temp);
+			setTimeout(function(){
+				show()
+			},2000)
+		})
+		
+	})
 
 
 

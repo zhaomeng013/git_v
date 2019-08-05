@@ -18,6 +18,7 @@ gulp.task("watchall",async ()=>{
 		.pipe(babel({
 			presets:["es2015"]
 		}))
+		.pipe(gulp.dest("D:\\phpStudy\\WWW\\pro_vhlondon\\js"))
 		.pipe(concat("vh.js"))
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\pro_vhlondon\\js"))
 		
@@ -27,6 +28,7 @@ gulp.task("watchall",async ()=>{
 	})
 	gulp.watch("css/*.css",async ()=>{
 		gulp.src("css/*.css")
+		.pipe(gulp.dest("D:\\phpStudy\\WWW\\pro_vhlondon\\css"))
 		.pipe(concat("vh.css"))
 		.pipe(gulp.dest("D:\\phpStudy\\WWW\\pro_vhlondon\\css"))
 		.pipe(minify())
